@@ -1,11 +1,26 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-<title>Our Funky HTML Page</title>
-<meta name="description" content="Our first page">
-<meta name="keywords" content="html tutorial template">
+<title>Digital Clock</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-Content goes here.
+    <div class="box">
+      <div id="time" onload="timeCount()" style="text-align: center;">
+
+      </div>
+    </div>
+    <div class="butns">
+
+
+    <button id="pst" onclick="pstTime()" type="button" class="buttons" style="margin-left: 35%; margin-top: 10px;">PST</button>
+    <button id="cst"  onclick="cstTime()" type="button" class="buttons" onclick="alert('Hello world!')">CST</button>
+    <button id="est" onclick="timeCount()" type="button" class="buttons">EST</button>
+</div>
+
+
+
+    <script src="time.js"></script>
 </body>
+
 </html>

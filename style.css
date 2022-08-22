@@ -1,0 +1,25 @@
+.box{
+    border: 10px,black;
+    height: 100px;
+    width: 50%;
+    background-color: white;
+    border-style: solid;
+    margin-left: 40%;
+
+    margin: auto;
+}
+
+body {
+    background-color: lightblue;
+  }
+
+#time {
+    font-size: 70px;
+}
+
+.buttons{
+    background-color: bisque;
+    height: 70px;
+    width: 100px;
+
+}
