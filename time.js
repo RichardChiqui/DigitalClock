@@ -2,9 +2,9 @@
 
 
 
-
+ var timer = setInterval(timeCount, 1000);
 function timeCount(){
-   setInterval(timeCount, 1000);
+
 
    test = timeCount;
    var date = new Date();
@@ -31,9 +31,14 @@ function timeCount(){
    document.getElementById("time").innerText = time;
 }
 
+function stopTime(){
+   clearInterval(timer);
 
+}
 function pstTime(){
-   setInterval(pstTime, 1000);
+   stopTime()
+
+   timer = setInterval(pstTime, 1000);
    test = pstTime;
    var date = new Date();
    var hour = date.getHours();
@@ -66,6 +71,7 @@ function pstTime(){
 
 
 function cstTime(){
+   stopTime();
    test = cstTime;
    var date = new Date();
    var hour = date.getHours();
